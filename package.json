@@ -2,7 +2,11 @@
   "name": "javascript-development-environment",
   "version": "1.0.0",
   "description": "JS development environment",
-  "scripts": {},
+  "scripts": {
+    "prestart": "babel-node buildScript/startMessage.js",
+    "start": "babel-node buildScript/srcServer.js",
+    "security-check": "nsp check"
+  },
   "author": "Muntasir",
   "license": "MIT",
   "dependencies": {
