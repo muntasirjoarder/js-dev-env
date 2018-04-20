@@ -13,6 +13,6 @@ getUsers().then(result => {
       <td>${user.email}</td>
     </tr>`
   });
-
+  console.log('user body:'+ userBody); // eslint-disable-line no-console
   global.document.getElementById('users').innerHTML = userBody;
 });
